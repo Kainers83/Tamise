@@ -1,2 +1,2 @@
 start ungit
-rem start project.pro
+start sources/project.pro

@@ -57,12 +57,12 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 [Files]
 Source: "{#MyAppROOT}{#MyAppExec}\Tamise.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#MyAppROOT}{#MyAppBin}\fmodex.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyAppROOT}\bin\bearer\*"; DestDir: "{app}\bearer"; Flags: ignoreversion
-Source: "{#MyAppROOT}\bin\iconengines\*"; DestDir: "{app}\iconengines"; Flags: ignoreversion
-Source: "{#MyAppROOT}\bin\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: ignoreversion
-Source: "{#MyAppROOT}\bin\platforms\*"; DestDir: "{app}\platforms\"; Flags: ignoreversion
-Source: "{#MyAppROOT}\bin\styles\*"; DestDir: "{app}\styles"; Flags: ignoreversion
-Source: "{#MyAppROOT}\bin\translations\*"; DestDir: "{app}\translations"; Flags: ignoreversion
+Source: "{#MyAppROOT}\deploy\bearer\*"; DestDir: "{app}\bearer"; Flags: ignoreversion
+Source: "{#MyAppROOT}\deploy\iconengines\*"; DestDir: "{app}\iconengines"; Flags: ignoreversion
+Source: "{#MyAppROOT}\deploy\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: ignoreversion
+Source: "{#MyAppROOT}\deploy\platforms\*"; DestDir: "{app}\platforms\"; Flags: ignoreversion
+Source: "{#MyAppROOT}\deploy\styles\*"; DestDir: "{app}\styles"; Flags: ignoreversion
+Source: "{#MyAppROOT}\deploy\translations\*"; DestDir: "{app}\translations"; Flags: ignoreversion
 
 Source: "{#MyAppROOT}\sources.7z"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
