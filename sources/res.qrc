@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="gpl.png">res/gplv3-88x31.png</file>
+        <file alias="mute.png">res/sound-mute-icon.png</file>
+        <file alias="icon.png">res/mixer-icon.png</file>
+        <file alias="volume.png">res/Volume-Normal-icon_48.png</file>
+        <file  alias="button.png">res/button.png</file>
+        <file>res/Fullscreen.png</file>
+        <file>res/Get Info Blue Button.png</file>
+        <file>res/Transfer.png</file>
+        <file>res/Gear.png</file>
+        <file>res/History.png</file>
+        <file>res/Menu.png</file>
+        <file>res/Save-icon.png</file>
+        <file>res/Actions-system-log-out-icon.png</file>
+        <file>res/Actions-system-reboot-icon.png</file>
+        <file>res/Actions-system-shutdown-icon.png</file>
+        <file>res/Actions-system-switch-user-icon.png</file>
+        <file>res/Refresh-icon.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file alias="logo.ttf">res/1942.ttf</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file>res/license.txt</file>
+    </qresource>
+    <qresource prefix="/css">
+        <file alias="style.css">res/style.css</file>
+        <file alias="tamise.css">res/tamise.css</file>
+        <file alias="black.css">res/black.css</file>
+    </qresource>
+</RCC>

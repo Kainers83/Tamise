@@ -1,0 +1,29 @@
+ QLabel#TitreSoft{
+        background:black;
+        color:white;
+ }
+ QSlider:vertical {
+         width:50px;
+ }
+ QSlider:handle:vertical{
+	height: 35px;
+	width:50px;
+ }
+ QTabWidget QWidget#Page  {
+         background: rgb(0,222,222);
+  }
+  QGroupBox#NoState, QScrollArea QWidget#scrollAreaWidgetContents {
+         background: rgb(240,240,240);
+  }
+  QGroupBox#Stopped{
+         background: rgb(240,240,240);
+  }
+  QGroupBox#Playing{
+         background:rgb(200,200,200);
+  }
+  QGroupBox#Paused{
+         background:rgb(150,150,150);
+  }
+  QGroupBox#Error{
+         background:rgb(255,100,100);
+  }

@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowDesign</class>
+ <widget class="QMainWindow" name="MainWindowDesign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>921</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QToolBox" name="toolBox">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="toolBoxOptions">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>576</width>
+          <height>534</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Options</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Style</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="optionsStyleCombo"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="optionCustWin">
+           <property name="title">
+            <string>Dimensions et Positions à l'ouverture.</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QRadioButton" name="optionDefaultWin">
+              <property name="text">
+               <string>Utiliser les valeurs par defaut</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="optionLastWin">
+              <property name="text">
+               <string>Garder les Dimensions et Positions Actuelles.</string>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="optionFS">
+              <property name="text">
+               <string>Ouvrir en Plein Ecran</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="optionCustomWin">
+              <property name="text">
+               <string>Utiliser des paramètres personnalisées</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="optionCustWinPos">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="title">
+               <string>Position fenetre</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>X</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="optionCustWinPosX">
+                 <property name="maximum">
+                  <number>4096</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Y</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="optionCustWinPosY">
+                 <property name="maximum">
+                  <number>4096</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="optionCustWinDim">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="title">
+               <string>Dimension Fenetre</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>X</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="optionCustWinDimX">
+                 <property name="maximum">
+                  <number>4096</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>Y</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="optionCustWinDimY">
+                 <property name="maximum">
+                  <number>4096</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="optionCustWinButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Utiliser la dimension et la position actuelle</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Onglets Maximum</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>(0= Illimité)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="optionOngletsMax"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>Controlleurs Max Par Onglets</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>(0= Illimité)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="optionGearsMax"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="toolBoxCompteur">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>576</width>
+          <height>534</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Compteur</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>120</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLCDNumber" name="compteurH">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="digitCount">
+               <number>2</number>
+              </property>
+              <property name="segmentStyle">
+               <enum>QLCDNumber::Flat</enum>
+              </property>
+              <property name="value" stdset="0">
+               <double>23.000000000000000</double>
+              </property>
+              <property name="intValue" stdset="0">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="compteurM">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="smallDecimalPoint">
+               <bool>false</bool>
+              </property>
+              <property name="digitCount">
+               <number>2</number>
+              </property>
+              <property name="segmentStyle">
+               <enum>QLCDNumber::Flat</enum>
+              </property>
+              <property name="value" stdset="0">
+               <double>59.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="compteurS">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <property name="digitCount">
+               <number>2</number>
+              </property>
+              <property name="segmentStyle">
+               <enum>QLCDNumber::Flat</enum>
+              </property>
+              <property name="value" stdset="0">
+               <double>59.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QProgressBar" name="compteurProgBar">
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QPushButton" name="compteurmoins30s">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>-30s</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="compteurplus30s">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>+30s</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>Mode</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="compteurModeCo">
+                 <property name="text">
+                  <string>Compteur</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="compteurModeCh">
+                 <property name="text">
+                  <string>Chrono</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QTimeEdit" name="compteurTime">
+                 <property name="minimumSize">
+                  <size>
+                   <width>180</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="displayFormat">
+                  <string>HH:mm:ss</string>
+                 </property>
+                 <property name="time">
+                  <time>
+                   <hour>1</hour>
+                   <minute>0</minute>
+                   <second>0</second>
+                  </time>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QPushButton" name="compteurSet">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Set</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="compteurReset">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Reset</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="compteurStart">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Demarrer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="ConduiteWidget" name="toolBoxConduite">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>576</width>
+          <height>534</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Conduite</string>
+        </attribute>
+       </widget>
+       <widget class="PageDialog" name="toolBoxPage">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>576</width>
+          <height>534</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Page</string>
+        </attribute>
+       </widget>
+       <widget class="GearDialog" name="toolBoxControleurs">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>576</width>
+          <height>534</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Controleurs</string>
+        </attribute>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QHBoxLayout" name="layout1">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>1</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="TitreSoft">
+          <property name="styleSheet">
+           <string notr="true">font: 36pt;</string>
+          </property>
+          <property name="text">
+           <string>TAMISE</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="buddy">
+           <cstring>TitreSoft</cstring>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>921</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConsole">
+    <property name="title">
+     <string>Console</string>
+    </property>
+    <addaction name="actionNouvelle"/>
+    <addaction name="actionCharger"/>
+    <addaction name="actionEnregistrer"/>
+    <addaction name="actionEnregistrer_Liste"/>
+    <addaction name="actionEnregister_Projet"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionOptions"/>
+    <addaction name="actionCompteur"/>
+    <addaction name="actionConduite_Scenique"/>
+    <addaction name="actionPages"/>
+    <addaction name="actionAjouter"/>
+    <addaction name="actionInformations"/>
+    <addaction name="separator"/>
+    <addaction name="actionBarre_de_Menu"/>
+    <addaction name="actionPlein_Ecran"/>
+    <addaction name="actionCacher_Panneau"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionA_Propos"/>
+    <addaction name="actionUpdate"/>
+   </widget>
+   <widget class="QMenu" name="menuControleurs">
+    <property name="title">
+     <string>Controleurs</string>
+    </property>
+    <addaction name="actionMutePage"/>
+    <addaction name="actionMuteAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionMutePageRemove"/>
+    <addaction name="actionMuteAllRemove"/>
+    <addaction name="separator"/>
+    <addaction name="actionNextPage"/>
+    <addaction name="actionNextAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionNextPageRemove"/>
+    <addaction name="actionNextAllRemove"/>
+   </widget>
+   <widget class="QMenu" name="menuControleurs_2">
+    <property name="title">
+     <string>Onglet</string>
+    </property>
+    <widget class="QMenu" name="menuVolume">
+     <property name="title">
+      <string>Volume des controleurs</string>
+     </property>
+     <addaction name="action0"/>
+     <addaction name="action25"/>
+     <addaction name="action50"/>
+     <addaction name="action75"/>
+     <addaction name="action100"/>
+    </widget>
+    <widget class="QMenu" name="menuMettre_tout_les_controleurs_la_suite">
+     <property name="title">
+      <string>Mettre tout les controleurs à la suite</string>
+     </property>
+     <addaction name="actionNextYes"/>
+     <addaction name="actionNextNo"/>
+    </widget>
+    <addaction name="menuVolume"/>
+    <addaction name="separator"/>
+    <addaction name="menuMettre_tout_les_controleurs_la_suite"/>
+    <addaction name="actionStoper_tous_les_controleurs"/>
+   </widget>
+   <widget class="QMenu" name="menuDriver_Audio">
+    <property name="title">
+     <string>Driver Audio</string>
+    </property>
+   </widget>
+   <addaction name="menuConsole"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuControleurs_2"/>
+   <addaction name="menuControleurs"/>
+   <addaction name="menuDriver_Audio"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="Raccourcis">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNouvelle"/>
+   <addaction name="actionCharger"/>
+   <addaction name="actionEnregistrer"/>
+   <addaction name="actionEnregistrer_Liste"/>
+   <addaction name="actionEnregister_Projet"/>
+   <addaction name="separator"/>
+   <addaction name="action0"/>
+   <addaction name="action25"/>
+   <addaction name="action50"/>
+   <addaction name="action100"/>
+   <addaction name="separator"/>
+   <addaction name="actionPlein_Ecran"/>
+  </widget>
+  <action name="actionNouvelle">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Actions-system-reboot-icon.png</normaloff>:/img/res/Actions-system-reboot-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouvelle</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionCharger">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Actions-system-log-out-icon.png</normaloff>:/img/res/Actions-system-log-out-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Charger</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Save-icon.png</normaloff>:/img/res/Save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="actionAjouter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Menu.png</normaloff>:/img/res/Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Controleurs</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="actionPlein_Ecran">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Fullscreen.png</normaloff>:/img/res/Fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Plein Ecran</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionInformations">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/History.png</normaloff>:/img/res/History.png</iconset>
+   </property>
+   <property name="text">
+    <string>Informations</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
+   </property>
+  </action>
+  <action name="actionConduite_Scenique">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Menu.png</normaloff>:/img/res/Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Conduite Scenique</string>
+   </property>
+   <property name="shortcut">
+    <string>F7</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Actions-system-shutdown-icon.png</normaloff>:/img/res/Actions-system-shutdown-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+End</string>
+   </property>
+  </action>
+  <action name="actionA_Propos">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Get Info Blue Button.png</normaloff>:/img/res/Get Info Blue Button.png</iconset>
+   </property>
+   <property name="text">
+    <string>A Propos</string>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Gear.png</normaloff>:/img/res/Gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Options</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionCacher_Panneau">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Menu.png</normaloff>:/img/res/Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Panneau</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_Liste">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Save-icon.png</normaloff>:/img/res/Save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer Liste</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="actionBarre_de_Menu">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Menu.png</normaloff>:/img/res/Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Barre de Menu</string>
+   </property>
+   <property name="shortcut">
+    <string>ScrollLock</string>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Transfer.png</normaloff>:/img/res/Transfer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mise à jour</string>
+   </property>
+  </action>
+  <action name="actionPages">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Menu.png</normaloff>:/img/res/Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pages</string>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+  </action>
+  <action name="actionMutePage">
+   <property name="text">
+    <string>Sourdine</string>
+   </property>
+  </action>
+  <action name="actionMuteAll">
+   <property name="text">
+    <string>Onglet actuel en Sourdine</string>
+   </property>
+  </action>
+  <action name="actionEnregister_Projet">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Save-icon.png</normaloff>:/img/res/Save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregister Projet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F4</string>
+   </property>
+  </action>
+  <action name="actionNextPage">
+   <property name="text">
+    <string>Mettre Tous les controleurs de l'onglet sur suivant</string>
+   </property>
+  </action>
+  <action name="actionNextAll">
+   <property name="text">
+    <string>Mettre tous les controleurs sur suivant</string>
+   </property>
+  </action>
+  <action name="actionMutePageRemove">
+   <property name="text">
+    <string>Enlever l'onglet de la sourdine</string>
+   </property>
+  </action>
+  <action name="actionMuteAllRemove">
+   <property name="text">
+    <string>Enlever tous les onglets de la sourdine</string>
+   </property>
+  </action>
+  <action name="actionNextPageRemove">
+   <property name="text">
+    <string>Enlever tous les controleurs de l'onglet de suivant</string>
+   </property>
+  </action>
+  <action name="actionNextAllRemove">
+   <property name="text">
+    <string>Enlever tous les controleurs de suivant</string>
+   </property>
+  </action>
+  <action name="action0">
+   <property name="text">
+    <string>0%</string>
+   </property>
+  </action>
+  <action name="action25">
+   <property name="text">
+    <string>25%</string>
+   </property>
+  </action>
+  <action name="action50">
+   <property name="text">
+    <string>50%</string>
+   </property>
+  </action>
+  <action name="action100">
+   <property name="text">
+    <string>100%</string>
+   </property>
+  </action>
+  <action name="actionMettre_tout_en_simple">
+   <property name="text">
+    <string>Enlever la Lecture des suivant</string>
+   </property>
+  </action>
+  <action name="actionNextYes">
+   <property name="text">
+    <string>Oui</string>
+   </property>
+  </action>
+  <action name="actionNextNo">
+   <property name="text">
+    <string>Non</string>
+   </property>
+  </action>
+  <action name="actionTous_les_activer">
+   <property name="text">
+    <string>Tous les activer</string>
+   </property>
+  </action>
+  <action name="actionTous_les_desactiver">
+   <property name="text">
+    <string>Tous les désactiver</string>
+   </property>
+  </action>
+  <action name="actionStoper_tous_les_controleurs">
+   <property name="text">
+    <string>Stoper tous les controleurs</string>
+   </property>
+  </action>
+  <action name="action75">
+   <property name="text">
+    <string>75%</string>
+   </property>
+  </action>
+  <action name="actionCompteur">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/res/Menu.png</normaloff>:/img/res/Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Compteur/Chrono</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="actionCompteur_Chrono">
+   <property name="text">
+    <string>Compteur/Chrono</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ConduiteWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">conduitewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GearDialog</class>
+   <extends>QWidget</extends>
+   <header location="global">geardialog.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PageDialog</class>
+   <extends>QWidget</extends>
+   <header>pagedialog.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionBarre_de_Menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>menubar</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>optionCustomWin</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>optionCustWinPos</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>optionCustomWin</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>optionCustWinDim</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>285</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>optionCustomWin</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>optionCustWinButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>367</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
